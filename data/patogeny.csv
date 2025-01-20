@@ -1,5 +1,6 @@
-patogen,opis
-Wirus grypy,Wirus grypy (Influenza) atakuje drogi oddechowe...
-Koronawirus SARS-CoV-2,Odpowiedzialny za COVID-19...
-Bakteria E.coli,"Pałeczka okrężnicy, występuje w jelicie grubym..."
-Wirus RSV,Wirus nabłonka oddechowego dzieci i niemowląt...
+pathogen_name_pl,pathogen_name_lat,pathogen_description,therapy_description
+Salmonella,Salmonella enterica,"Bakteria wywołująca salmonellozę, chorobę zakaźną układu pokarmowego.","Terapia składa się z rehydratacji i, w ciężkich przypadkach, antybiotykoterapii."
+Grzybica skóry,Candida albicans,"Grzybica powodowana przez drożdżaki, często dotyka skórę, paznokcie i błony śluzowe.",Leczenie miejscowe antygrzybicznymi kremami lub doustnymi lekami przeciwgrzybicznymi.
+Grypa,Influenza virus,"Wirusowa infekcja układu oddechowego, charakteryzująca się gorączką, kaszlem i bólami mięśni.","Leczenie objawowe, w tym leki przeciwgorączkowe i odpoczynek, szczepienia jako profilaktyka."
+Odra,Morbillivirus,"Wysoko zakaźna wirusowa choroba z wysypką, gorączką i kaszlem.","Leczenie objawowe i izolacja pacjenta, szczepienia jako główna forma profilaktyki."
+Tasiemczycy,Taenia solium,"Pasożyt, tasiemiec wywołujący zakażenie poprzez spożycie surowego lub niedogotowanego mięsa.","Leczenie polega na podawaniu leków przeciwpasożytniczych, takich jak prazykwantel."
