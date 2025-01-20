@@ -12,6 +12,7 @@ options = [f'{row["pathogen_name_pl"]} ({row["pathogen_name_lat"]})' for index, 
 options.sort()
 
 selected_option = st.selectbox('Wybierz patogen: ', options, index=None, placeholder='Wybierz patogen')
+pdf_buffer = None
 create_pdf_button = None
 
 if selected_option:
@@ -29,16 +30,7 @@ if selected_option:
         st.write(result['therapy_description'])
     
     st.write('---')
-    create_pdf_button = st.button('Generuj PDF')
-
-if create_pdf_button:
-    pdf_buffer = create_pdf(result['pathogen_name_pl'], result['pathogen_name_lat'], result['pathogen_description'], result['therapy_description'])
-
-    pdf_base64 = base64.b64encode(pdf_buffer.read()).decode('utf-8')
-    pdf_buffer.seek(0)
-
-    pdf_display = f'<iframe src="data:application/pdf;base64,{pdf_base64}" width="700" height="900" type="application/pdf"></iframe>'
-    st.markdown(pdf_display, unsafe_allow_html=True)
+    st.download_button(label='Pobierz PDF', data=create_pdf(result['pathogen_name_pl'], result['pathogen_name_lat'], result['pathogen_description'], result['therapy_description']), file_name='raport.pdf', mime='application/pdf')
 
 
 
